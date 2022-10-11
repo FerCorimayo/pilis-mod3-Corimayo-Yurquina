@@ -1,7 +1,7 @@
 const  NewCard = () => {
     return (
         <>
-        <h1>Formulario</h1>
+        <h1>Formulario De creacion de targeta</h1>
         </>
     );
 };
