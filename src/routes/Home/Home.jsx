@@ -1,3 +1,6 @@
+import { useContext } from 'react';
+import { CardsContext } from '../../context/CardContext';
+
 const Home = () => {
     return (
         <>
