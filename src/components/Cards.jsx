@@ -1,7 +1,7 @@
 import Card from "../components/Card";
 
 const Cardes = ({cards}) => {
-/*     cards.map((cards) => {console.log(cards)}) */
+    cards.map((cards) => {console.log(cards)}) 
     return (
         <>
         <div className="grid">

@@ -1,5 +1,5 @@
 import {useContext} from 'react';
-import {CardsContext} from '../context/CardContex';
+import {CardsContext} from '../context/CardContex'
 import {ImBin2} from 'react-icons/im';
 
 const Card = ({box}) => {

@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
-import { getCards } from "./servce";
+import { getCards } from '../../service'
 import { useContext, useEffect, useState } from 'react';
-import { CardsContext} from './context/CardContext'
+import { CardsContext } from '../../context/CardContex'
 import { useNavigate } from 'react-router-dom';
 
 
@@ -20,11 +20,11 @@ const  NewCard = () => {
     const onSubmit = (data) => {
         console.log(data)
         const coords = [parseFloat(data.text),parseFloat(data.text2),data.text,data.tex2,data.text3]
-        setCooredenadas(coords);
+        
         console.log(cardsInfo)
-        navigate('/')
+        
+        setCooredenadas(coords);
       }
-
 
 
       useEffect(()=> {
@@ -35,7 +35,7 @@ const  NewCard = () => {
             const informacion={id:cardsInfo.length+1,lugar: coordenadas[4],latitude: data.latitude,longitude: data.longitude,temperatura: data.current_weather.temperature,velocidadViento: data.current_weather.windspeed}
             setCooredenadas([0])
             setCards([...cardsInfo,informacion]);
-
+            navigate('/')
         })
         .catch((err) => console.log(err));
 
