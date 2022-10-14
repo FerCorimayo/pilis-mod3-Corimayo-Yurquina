@@ -32,7 +32,7 @@ const  NewCard = () => {
         if(coordenadas.length>1){
           getCards(coordenadas[0],coordenadas[1])
           .then((data) => {
-            const informacion={id:cardsInfo.length+1,lugar: coordenadas[4],latitude: data.latitude,longitude: data.longitude,temperatura: data.current_weather.temperature,velocidadViento: data.current_weather.windspeed}
+            const informacion={id:cardsInfo.length+1,lugar: coordenadas[4],latitude: data.latitude,longitude: data.longitude,temperatura: data.current_weather.temperature,velocidadViento: data.current_weather.windspeed, codigo_tiempo: data.current_weather.weathercode}
             setCooredenadas([0])
             setCards([...cardsInfo,informacion]);
             navigate('/')

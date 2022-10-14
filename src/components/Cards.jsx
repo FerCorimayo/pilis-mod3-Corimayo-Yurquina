@@ -1,4 +1,5 @@
 import Card from "../components/Card";
+import './Cards.css'
 
 const Cardes = ({cards}) => {
     cards.map((cards) => {console.log(cards)}) 
