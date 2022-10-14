@@ -15,12 +15,13 @@ return(
     <>
     <div className='card'>
     {/* <h2>Targeta N°: {id}</h2> */}
-    <h2>{lugar}</h2>
-    <h3>Lat: {latitude}</h3>
-    <h3>Long: {longitude}</h3>
-    <h3>Temp: {temperatura} °C</h3>
-    <h3>V. Viento: {velocidadViento} Km/h</h3>
-    <h3>Codigo WW: {codigo_tiempo}</h3>
+    <p className='card_titulo'>{lugar}</p>
+    <p className='card_contenido'>Latitud: {latitude}</p>
+    <p className='card_contenido'>Longitud: {longitude}</p>
+    <p className='card_contenido'>Temp: {temperatura} °C</p>
+    <p className='card_contenido'>V. Viento: {velocidadViento} Km/h</p>
+    {/* VER DE ASOCIAR EL CÓDIGO DE CLIMA CON UN ÍCONO */}
+    <p className='card_contenido'>Código WW: {codigo_tiempo}</p>
     <div className='botones'>
         <div className='btn-del' onClick={eliminar}>
             <ImBin2 className='trash' />

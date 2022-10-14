@@ -3,6 +3,7 @@ import { getCards } from '../../service'
 import { useContext, useEffect, useState } from 'react';
 import { CardsContext } from '../../context/CardContex'
 import { useNavigate } from 'react-router-dom';
+import './CreationCard.css';
 
 
 const  NewCard = () => {
@@ -46,21 +47,21 @@ const  NewCard = () => {
 
     return (
         <>
-        <h1>Formulario De creacion de targeta</h1>
-    <div className="Contenedor">
-      <h1>Formularios</h1>
+    <div className="contenedor_formulario">
+      <p className="formulario_titulo">Formulario de creacion de targeta</p>
       <form onSubmit={handleSubmit(onSubmit)}>
 
           <input
-            type='text'
-            placeholder="Nombre de lugar"
+            className="form-group"
+            type='text' 
+            placeholder="Nombre de la ubicación"
             {...register(
               'text3',
               
             )}
           />
           <p>{errors.text3?.message}</p>
-          <input className="imput-coord"
+          <input className="form-group"
             type='text'
             placeholder="latitud"
             {...register(
@@ -70,7 +71,7 @@ const  NewCard = () => {
           />
           <p>{errors.text?.message}</p>
 
-          <input className="imput-coord"
+          <input className="form-group"
             type='text'
             placeholder="longitud"
             {...register(
@@ -81,7 +82,7 @@ const  NewCard = () => {
           <p>{errors.text2?.message}</p>
 
 
-          <button type='submit'>Enviar</button>
+          <button className="btn_enviar" type='submit'>Enviar</button>
 
           
       </form>
