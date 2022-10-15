@@ -21,7 +21,7 @@ return(
     <p className='card_contenido'>Temp: {temperatura} °C</p>
     <p className='card_contenido'>V. Viento: {velocidadViento} Km/h</p>
     {/* VER DE ASOCIAR EL CÓDIGO DE CLIMA CON UN ÍCONO */}
-    <p className='card_contenido'>Código WW: {codigo_tiempo}</p>
+    {/* <p className='card_contenido'>Código WW: {codigo_tiempo}</p> */}
     <div className='botones'>
         <div className='btn-del' onClick={eliminar}>
             <ImBin2 className='trash' />

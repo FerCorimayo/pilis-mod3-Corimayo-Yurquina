@@ -1,3 +1,33 @@
+# TRABAJO FINAL GRUPAL - MÓDULO 3: Desarrollo Frontend con React
+
+Este proyecto se titula `FIND YOURSELF` y utiliza la API del clima [Open Meteo](https://open-meteo.com/en), en el mismo el usuario podrá generar tarjetas de ubicaciones indicando solamente la latitud y longitud y un nombre del lugar. La tarjeta creada contendrá, además, datos referentes al clima obtenidos de la API.
+
+## Puntos desarrollados
+
+1. El usuario puede ver la lista de ubicaciones disponibles creadas.
+2. El usuario puede ver en cada tarjeta de ubicación los siguientes datos:
+
+    2.1 Nombre de la ubicación.\
+    2.2 latitud.\
+    2.3 longitud.\
+    2.4 temperatura.\
+    2.5 velocidad del viento.
+
+3. El usuario podrá crear una nueva ubicación indicando un nombre de ubicación, latitud y longitud. La misma se muestra en home como una targeta.
+4. El usuario puede eliminar las tarjetas a elección.
+
+## Requisitos cumplidos
+
+1. Todo el código fuente se encuentra en el [repositorio](https://github.com/FerCorimayo/pilis-mod3-Corimayo-Yurquina) creado para este trabajo.
+2. El trabajo fue realizado por `Fernando Corimayo` y `Cristian Yurquina`.
+3. Se empleo la API [Open Meteo](https://open-meteo.com/en) y sus datos de respuesta.
+4. Se utilizaron las librerías: `react-router-dom`, `react-icons`, `react-hook-form`.
+5. Se crearon más de 1 ruta de navegación.
+6. Se utilizaron más de 1 hook distintos.
+7. Se creo por lo menos 1 context.
+
+##
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

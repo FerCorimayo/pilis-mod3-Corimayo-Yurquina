@@ -13,7 +13,6 @@ const Navigation = () => {
                 <Link className='nav-link' to='newCard'>
                     Nueva Targeta
                 </Link>
-{/*                 <h1>Navegacion</h1> */}
             </div>
         </div>
         <Outlet />
